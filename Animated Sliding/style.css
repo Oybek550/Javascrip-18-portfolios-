@@ -1,0 +1,77 @@
+
+.main-container {
+ width: 300px;
+ position: absolute;
+ top: 20%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.button {
+ background-color: black;
+ color: white;   
+ font-size: 25px;
+ width: 150px;
+ height: 50px;
+ border-radius: 20px;
+ text-align: center;
+ padding-top: 20px;
+ cursor: pointer;
+ transition: width .4s;
+
+}
+.button.expand {
+    width: 100%;
+     
+}
+
+
+.bi {
+    margin-left: 20px;
+    color: #fff;
+}
+.bi.expand::before {
+    content: '\F62A';
+   
+}
+ul::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 10px;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+  }
+ul {
+    position: absolute;
+    top: 110%;
+    margin-top: 70px;
+    transform: translateY(-20%);
+    width: 260px;
+    text-align: center;
+    list-style: none;
+    background-color: #000;
+    display: none;
+    
+ 
+}
+ul.pop {
+display: block;
+transition:all .5s  ;
+}
+
+li{
+
+    font-size: 20px;
+    line-height: 50px;
+}
+a { 
+    color: #fff;
+    text-decoration: none;
+    
+}
+li:hover {
+    border:1px solid aqua ;
+}

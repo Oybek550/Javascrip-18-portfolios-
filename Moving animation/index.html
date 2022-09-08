@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Moving Text Mask Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <div class="text">CodingNepal</div>
+    <script>
+    const text = document.querySelector('.text')
+    
+    text.addEventListener('mousemove', (e) => {
+      let moveDown = e.pageX 
+      let moveUp = e.pageY 
+      text.style.backgroundPosition = moveDown + "px"
+      text.style.backgroundPosition = moveUp + "px"
+      let x = ((17 * moveDown) / 570 )+ 50;
+      let y = ((17 * moveUp) / 570 )+ 50;
+      text.style.backgroundPosition = x +  "%" + y  +  "%"
+    })
+    
+    </script>
+
+  </body>
+</html>

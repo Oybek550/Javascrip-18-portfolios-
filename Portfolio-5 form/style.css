@@ -1,0 +1,28 @@
+body {
+    background:  url(./img/756504609782470.jpg);
+    background-repeat: no-repeat;
+}
+.wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: inherit;
+}
+.show-btn {
+    height: 20px;
+}
+.modal {
+    width: 500px;
+    height: 200px;
+    background-color: aliceblue;
+}
+.hidden {
+ display: none;
+}
+.into {
+    position: relative;
+    top: -120px;
+    left: 93%;
+
+}
+
